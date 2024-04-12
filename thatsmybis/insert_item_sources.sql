@@ -83,7 +83,7 @@ INSERT INTO `item_sources` (`name`, `slug`, `instance_id`, `npc_id`, `object_id`
     ("Warmaster Blackhorn",  "warmaster-blackhorn",  58, 56427, null,   9,  "2024-04-07 00:00:00"),
     ("Spine of Deathwing",   "spine-of-deathwing",   58, null,  209896, 10, "2024-04-07 00:00:00"),
     ("Deathwing",            "deathwing",            58, 56173, null,   11, "2024-04-07 00:00:00");
--- Fixes for the above inserts.
+-- Add missing item sources
 INSERT INTO `item_sources` (`name`, `slug`, `instance_id`, `npc_id`, `object_id`, `order`, `created_at`)
 VALUES
     -- Firelands Normal

@@ -548,3 +548,26 @@ UPDATE `items` SET `parent_id` = (SELECT * FROM (SELECT `id` FROM `items` WHERE 
 UPDATE `items` SET `parent_id` = (SELECT * FROM (SELECT `id` FROM `items` WHERE `item_id` = 78858 AND `expansion_id` = 5 LIMIT 1) AS thisisahack), `parent_item_id` = 78858  WHERE  `expansion_id` = 5 AND `item_id` IN (78710);
 UPDATE `items` SET `parent_id` = (SELECT * FROM (SELECT `id` FROM `items` WHERE `item_id` = 78858 AND `expansion_id` = 5 LIMIT 1) AS thisisahack), `parent_item_id` = 78858  WHERE  `expansion_id` = 5 AND `item_id` IN (78720);
 UPDATE `items` SET `parent_id` = (SELECT * FROM (SELECT `id` FROM `items` WHERE `item_id` = 78858 AND `expansion_id` = 5 LIMIT 1) AS thisisahack), `parent_item_id` = 78858  WHERE  `expansion_id` = 5 AND `item_id` IN (78708);
+
+-- Legendaries!
+-- 69815 Seething Cinder
+-- 71086 Dragonwrath, Tarecgosa's Rest
+UPDATE `items` SET `parent_id` = (SELECT * FROM (SELECT `id` FROM `items` WHERE `item_id` = 69815 AND `expansion_id` = 5 LIMIT 1) AS thisisahack), `parent_item_id` = 69815  WHERE  `expansion_id` = 5 AND `item_id` IN (71086);
+-- 71085 Runestaff of Nordrassil
+UPDATE `items` SET `parent_id` = (SELECT * FROM (SELECT `id` FROM `items` WHERE `item_id` = 69815 AND `expansion_id` = 5 LIMIT 1) AS thisisahack), `parent_item_id` = 69815  WHERE  `expansion_id` = 5 AND `item_id` IN (71085);
+-- 71141 Eternal Ember
+-- 71084 Branch of Nordrassil
+UPDATE `items` SET `parent_id` = (SELECT * FROM (SELECT `id` FROM `items` WHERE `item_id` = 71141 AND `expansion_id` = 5 LIMIT 1) AS thisisahack), `parent_item_id` = 71141  WHERE  `expansion_id` = 5 AND `item_id` IN (71084);
+-- 69646 Branch of Nordrassil (quest item)
+UPDATE `items` SET `parent_id` = (SELECT * FROM (SELECT `id` FROM `items` WHERE `item_id` = 71141 AND `expansion_id` = 5 LIMIT 1) AS thisisahack), `parent_item_id` = 71141  WHERE  `expansion_id` = 5 AND `item_id` IN (69646);
+-- 77952 Elementium Gem Cluster
+-- 77949 Golad, Twilight of Aspects
+UPDATE `items` SET `parent_id` = (SELECT * FROM (SELECT `id` FROM `items` WHERE `item_id` = 77952 AND `expansion_id` = 5 LIMIT 1) AS thisisahack), `parent_item_id` = 77952  WHERE  `expansion_id` = 5 AND `item_id` IN (77949);
+-- 77950 Tiriosh, Nightmare of Ages
+UPDATE `items` SET `parent_id` = (SELECT * FROM (SELECT `id` FROM `items` WHERE `item_id` = 77952 AND `expansion_id` = 5 LIMIT 1) AS thisisahack), `parent_item_id` = 77952  WHERE  `expansion_id` = 5 AND `item_id` IN (77950);
+-- 69237 Living Ember
+UPDATE `items` SET `parent_id` = (SELECT * FROM (SELECT `id` FROM `items` WHERE `item_id` = 69237 AND `expansion_id` = 5 LIMIT 1) AS thisisahack), `parent_item_id` = 69237  WHERE  `expansion_id` = 5 AND `item_id` IN (69954,69942,69945,69939,69949,69948,69953,69937,69952,69936,69950,69941,69944,69943,69938,69947,69951,69946);
+-- 71998 Essence of Destruction
+UPDATE `items` SET `parent_id` = (SELECT * FROM (SELECT `id` FROM `items` WHERE `item_id` = 71998 AND `expansion_id` = 5 LIMIT 1) AS thisisahack), `parent_item_id` = 71998  WHERE  `expansion_id` = 5 AND `item_id` IN (71985,71994,71992,71995,71996,71989,71988,71990,71984,71980,71986,71982,71987,71991,71997,71993,71983,71981);
+-- 71617 Crystallized Firestone (Heroic Firelands trash gear upgrades)
+UPDATE `items` SET `parent_id` = (SELECT * FROM (SELECT `id` FROM `items` WHERE `item_id` = 71617 AND `expansion_id` = 5 LIMIT 1) AS thisisahack), `parent_item_id` = 71617  WHERE  `expansion_id` = 5 AND `item_id` IN (69113, 71560, 71563, 71561, 71558, 71562, 71557, 71641, 69109, 71579, 71559, 71564, 71575);
